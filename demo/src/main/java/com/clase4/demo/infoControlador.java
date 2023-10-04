@@ -7,7 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/info")
 public class infoControlador {
     @GetMapping
-    public String status(){
+    public String statusInfo(){
         return "Online";
+    }
+    @GetMapping("/server")
+    public String statusServer(){
+        return "Server Online";
     }
 }
