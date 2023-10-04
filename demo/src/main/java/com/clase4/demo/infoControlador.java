@@ -4,10 +4,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController //convertirlo en un rest controller.
-@RequestMapping("/estudiante")
+@RequestMapping("/info")
 public class infoControlador {
-    @GetMapping("/status")
+    @GetMapping
     public String status(){
-        return "online";
+        return "Online";
     }
 }
